@@ -1,0 +1,12 @@
+/Users/eyup/RiderProjects/ChatGptDeneme/Shared/bin/Debug/net7.0/Shared.deps.json
+/Users/eyup/RiderProjects/ChatGptDeneme/Shared/bin/Debug/net7.0/Shared.dll
+/Users/eyup/RiderProjects/ChatGptDeneme/Shared/bin/Debug/net7.0/Shared.pdb
+/Users/eyup/RiderProjects/ChatGptDeneme/Shared/obj/Debug/net7.0/Shared.csproj.AssemblyReference.cache
+/Users/eyup/RiderProjects/ChatGptDeneme/Shared/obj/Debug/net7.0/Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/eyup/RiderProjects/ChatGptDeneme/Shared/obj/Debug/net7.0/Shared.AssemblyInfoInputs.cache
+/Users/eyup/RiderProjects/ChatGptDeneme/Shared/obj/Debug/net7.0/Shared.AssemblyInfo.cs
+/Users/eyup/RiderProjects/ChatGptDeneme/Shared/obj/Debug/net7.0/Shared.csproj.CoreCompileInputs.cache
+/Users/eyup/RiderProjects/ChatGptDeneme/Shared/obj/Debug/net7.0/Shared.dll
+/Users/eyup/RiderProjects/ChatGptDeneme/Shared/obj/Debug/net7.0/refint/Shared.dll
+/Users/eyup/RiderProjects/ChatGptDeneme/Shared/obj/Debug/net7.0/Shared.pdb
+/Users/eyup/RiderProjects/ChatGptDeneme/Shared/obj/Debug/net7.0/ref/Shared.dll
