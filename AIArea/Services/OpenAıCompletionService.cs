@@ -15,7 +15,7 @@ public class OpenAıCompletionService : BackgroundService
         _openAıService = openAıService;
     }
 
-    protected override async Task<AIResponse> ExecuteAsync(CancellationToken stoppingToken)
+    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         AIResponse response = new();
         
@@ -26,12 +26,12 @@ public class OpenAıCompletionService : BackgroundService
             CompletionCreateResponse result = await _openAıService.Completions.CreateCompletion(new CompletionCreateRequest()
             {
                 Prompt = Console.ReadLine(),
-                MaxTokens = 500
+                MaxTokens = 1000
             }, Models.TextDavinciV3, cancellationToken: stoppingToken);
 
             response.Message = result.Choices[0].Text;
 
-            return response;
+            Console.WriteLine(result.Choices[0].Text);
         }
         
     }
