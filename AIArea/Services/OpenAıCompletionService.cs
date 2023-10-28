@@ -15,7 +15,7 @@ public class OpenAıCompletionService : BackgroundService
         _openAıService = openAıService;
     }
 
-    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+    protected override async Task<AIResponse> ExecuteAsync(CancellationToken stoppingToken)
     {
         AIResponse response = new();
         
@@ -31,7 +31,7 @@ public class OpenAıCompletionService : BackgroundService
 
             response.Message = result.Choices[0].Text;
 
-            Console.WriteLine(result.Choices[0].Text);
+            return response;
         }
         
     }
