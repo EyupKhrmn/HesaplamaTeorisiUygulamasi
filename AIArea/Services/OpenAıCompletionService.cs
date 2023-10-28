@@ -17,7 +17,6 @@ public class OpenAıCompletionService : BackgroundService
 
     protected override async Task<AIResponse> ExecuteAsync(CancellationToken stoppingToken)
     {
-        var responses = new List<AIResponse>();
         AIResponse response = new();
         
         while (true)
@@ -31,8 +30,6 @@ public class OpenAıCompletionService : BackgroundService
             }, Models.TextDavinciV3, cancellationToken: stoppingToken);
 
             response.Message = result.Choices[0].Text;
-            
-            responses.Add(response);
 
             return response;
         }
