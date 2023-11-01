@@ -1,0 +1,239 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/PresentationLayer/PresentationLayer.csproj": {}
+  },
+  "projects": {
+    "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/AIArea/AIArea.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/AIArea/AIArea.csproj",
+        "projectName": "AIArea",
+        "projectPath": "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/AIArea/AIArea.csproj",
+        "packagesPath": "/Users/eyup/.nuget/packages/",
+        "outputPath": "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/AIArea/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/eyup/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/Shared/Shared.csproj": {
+                "projectPath": "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/Shared/Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Betalgo.OpenAI.GPT3": {
+              "target": "Package",
+              "version": "[6.8.4, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/PresentationLayer/PresentationLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/PresentationLayer/PresentationLayer.csproj",
+        "projectName": "PresentationLayer",
+        "projectPath": "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/PresentationLayer/PresentationLayer.csproj",
+        "packagesPath": "/Users/eyup/.nuget/packages/",
+        "outputPath": "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/PresentationLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/eyup/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/AIArea/AIArea.csproj": {
+                "projectPath": "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/AIArea/AIArea.csproj"
+              },
+              "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/Shared/Shared.csproj": {
+                "projectPath": "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/Shared/Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Betalgo.OpenAI.GPT3": {
+              "target": "Package",
+              "version": "[6.8.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/Shared/Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/Shared/Shared.csproj",
+        "projectName": "Shared",
+        "projectPath": "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/Shared/Shared.csproj",
+        "packagesPath": "/Users/eyup/.nuget/packages/",
+        "outputPath": "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/eyup/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
