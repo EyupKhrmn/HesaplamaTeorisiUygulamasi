@@ -1,23 +1,29 @@
+using Microsoft.EntityFrameworkCore;
 using OpenAI.GPT3.Interfaces;
 using OpenAI.GPT3.ObjectModels;
 using OpenAI.GPT3.ObjectModels.RequestModels;
 using OpenAI.GPT3.ObjectModels.ResponseModels;
-using Shared.Response;
+using Shared.Entities;
+using Shared.Repository;
 
 namespace ChatGptDeneme.Services;
 
 public class OpenAıCompletionService : BackgroundService
 {
     private readonly IOpenAIService _openAıService;
+    private readonly IGeneralRepository _generalRepository;
 
-    public OpenAıCompletionService(IOpenAIService openAıService)
+    public OpenAıCompletionService(IOpenAIService openAıService, IGeneralRepository generalRepository)
     {
         _openAıService = openAıService;
+        _generalRepository = generalRepository;
     }
 
-    protected override async Task<AIResponse> ExecuteAsync(CancellationToken stoppingToken)
+    protected override async Task<AıResponse> ExecuteAsync(CancellationToken stoppingToken)
     {
-        AIResponse response = new();
+        AıResponse response = new();
+
+        var user = await _generalRepository.Query<User>().FirstOrDefaultAsync(_ => _.Id == 61, cancellationToken: stoppingToken); // Kullanıcıdan gelen Id değeri ile sorgulanacak
         
         while (true)
         {
@@ -30,8 +36,10 @@ public class OpenAıCompletionService : BackgroundService
             }, Models.TextDavinciV3, cancellationToken: stoppingToken);
 
             response.Message = result.Choices[0].Text;
+            response.Id = user.Id;
+            user.Responses.Add(response);
 
-            return response;
+            Console.WriteLine(response.Message);
         }
         
     }

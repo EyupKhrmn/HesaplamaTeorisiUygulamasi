@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/eyup/RiderProjects/ChatGptDeneme/Shared/Shared.csproj": {}
+    "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/Shared/Shared.csproj": {}
   },
   "projects": {
-    "/Users/eyup/RiderProjects/ChatGptDeneme/Shared/Shared.csproj": {
+    "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/Shared/Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/eyup/RiderProjects/ChatGptDeneme/Shared/Shared.csproj",
+        "projectUniqueName": "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/Shared/Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "/Users/eyup/RiderProjects/ChatGptDeneme/Shared/Shared.csproj",
+        "projectPath": "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/Shared/Shared.csproj",
         "packagesPath": "/Users/eyup/.nuget/packages/",
-        "outputPath": "/Users/eyup/RiderProjects/ChatGptDeneme/Shared/obj/",
+        "outputPath": "/Users/eyup/RiderProjects/HesaplamaTeorisiUygulamasi/Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/eyup/.nuget/NuGet/NuGet.Config"
@@ -37,6 +37,28 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -53,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.310/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
         }
       }
     }
